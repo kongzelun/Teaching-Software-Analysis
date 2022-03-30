@@ -20,9 +20,11 @@ PROJECTHOME=$(pwd)
 #     export SVF_DIR=$install_path/SVF/
 # fi 
 
-LLVM_DIR="/usr/local"
-SVF_DIR="$(realpath ../SVF)"
-Z3_DIR="$SVF_DIR/z3"
+export LLVM_DIR="/usr/local"
+export SVF_DIR="$(realpath ../SVF)"
+export Z3_DIR="$SVF_DIR/z3"
+
+export PATH=$PROJECTHOME/build/bin:$PATH
 
 echo "LLVM_DIR="$LLVM_DIR
 echo "SVF_DIR="$SVF_DIR

@@ -9,4 +9,4 @@ cmake \
     -S . \
     -B build
 make -j $(nproc) -C build
-mv build/compile_commands.json .
+cp build/compile_commands.json .
